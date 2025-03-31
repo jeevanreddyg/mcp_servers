@@ -1,5 +1,5 @@
 from mcp.server.fastmcp import FastMCP
-mcp = FastMCP("math_server", log_level="DEBUG")
+mcp = FastMCP("math_server", log_level="DEBUG", port="3003")
 
 @mcp.tool()
 def add_numbers(x: int, y: int) -> int:
